@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 public class Hashtree {
 
 	public static void main(String[] args) {
-		Logger l =  Logger.getLogger("CreditCard");
+		Logger l =  Logger.getLogger("hashtree");
 	      // TreeSet
         TreeSet<String> ts1 = new TreeSet<>();
   
