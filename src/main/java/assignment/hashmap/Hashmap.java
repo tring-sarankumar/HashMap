@@ -8,7 +8,7 @@ public class Hashmap
 {
     public static void main( String[] args )
     {
-    	Logger l =  Logger.getLogger("CreditCard");
+    	Logger l =  Logger.getLogger("hashmap");
     	 HashMap<Integer, String> languages = new HashMap<>();
 
     	    languages.put(1, "Java");
