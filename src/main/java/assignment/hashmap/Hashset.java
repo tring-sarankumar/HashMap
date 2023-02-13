@@ -8,7 +8,7 @@ public class Hashset {
 
 	public static void main(String[] args) {
 		//Creating HashSet and adding elements
-		 Logger l =  Logger.getLogger("CreditCard");
+		 Logger l =  Logger.getLogger("hashset");
 		 HashSet<String> set=new HashSet<String>();  
          set.add("One");    
          set.add("Two");    
