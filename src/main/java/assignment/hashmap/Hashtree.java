@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 public class Hashtree {
 
 	public static void main(String[] args) {
-		Logger log =  Logger.getLogger("CreditCard");
+		Logger l =  Logger.getLogger("CreditCard");
 	      // TreeSet
         TreeSet<String> ts1 = new TreeSet<>();
   
@@ -21,16 +21,17 @@ public class Hashtree {
   
         // Elements get stored in default natural
         // Sorting Order(Ascending)
-        log.info(String.valueOf(ts1));
+	l.log(Level.INFO,()->"Set "+(ts1));
         
       //Traversing elements 
         Iterator<String> it=ts1.iterator();
 		while(it.hasNext()) {
-			log.info(it.next());
+			
+			l.log(Level.INFO,()->" " +it.next());
 		}
 		
 		//Size
-		log.info("Size :"+ts1.size());
+		 l.log(Level.INFO,()->" "+(map.size()));
 		
 		ts1.remove("BC");
 
