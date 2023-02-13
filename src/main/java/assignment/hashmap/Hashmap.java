@@ -8,7 +8,7 @@ public class Hashmap
 {
     public static void main( String[] args )
     {
-    	Logger log =  Logger.getLogger("CreditCard");
+    	Logger l =  Logger.getLogger("CreditCard");
     	 HashMap<Integer, String> languages = new HashMap<>();
 
     	    languages.put(1, "Java");
@@ -17,24 +17,26 @@ public class Hashmap
     	    log.info("HashMap: " + languages);
 
     	    // return set view of keys
-    	    log.info("Keys: " + languages.keySet());
+            l.log(Level.INFO,()->"Keys: " + languages.keySet());
 
     	    // return set view of values
-    	    log.info("Values: " + languages.values());
+            l.log(Level.INFO,()->"Values: " + languages.values());
 
     	    // return set view of key/value pairs
-    	    log.info("Key/Value mappings: " + languages.entrySet());
+            l.log(Level.INFO,()->"Key/Value mappings: " + languages.entrySet());
+    	    
     	    
     	    // remove element associated with key 
     	    String value = languages.remove(2);
-    	    log.info("Removed value: " + value);
+             l.log(Level.INFO,()->"Removed value: " + value);
 
-    	    log.info("Updated HashMap: " + languages);
+             l.log(Level.INFO,()->"Updated HashMap: " + languages);
+
     	    
     	 // iterate through keys only
     	    log.info("Keys: ");
     	    for (Integer key : languages.keySet()) {
-    	      log.info(String.valueOf(key));
+    	      log.info("The key:"+key);
     	    }
 
     	    // iterate through values only
@@ -46,7 +48,7 @@ public class Hashmap
     	    // iterate through key/value entries
     	    log.info("\nEntries: ");
     	    for (Entry<Integer, String> entry : languages.entrySet()) {
-    	      log.info(String.valueOf(entry));
+    	      log.info("key/value"+entry);
         
     }
 }
